@@ -1,0 +1,34 @@
+1) This workshop was by far the most challenging workshop. By dividing the code into distinct circumstances and utilising for loops and conditional statements to handle each different scenario, I was able to solve the non-repetitive areas. For instance, I utilised conditional statements and some do while loops to handle the logic of the various positions of the player and the prizes, while a for loop was used to draw the ruler. Overall, I believe this workshop was really difficult.
+
+2) Structures in programming allows us to group related variables of different data types under a single name. This can simplify the program's complexity and increase its readability, making it easier to maintain, modify, and debug. Without structures, we would have to create multiple variables to store different pieces of information. This can increase the likelihood of errors. Also, if you want to pass this information between functions or modules, you would need to pass each variable individually, which can be tough. Structures makes it easier to pass the data between functions or modules. This can significantly simplify the code and makes it more efficient. If I want to create a program to store information about an employee, without structures I might have to create separate variables for each information. But by creating a structure 'employee', we can pass the information easily between functions or modules in a single statement.
+
+3) The maximum  number of levels of nesting I used was 3
+
+        
+        for (k = 0; k < game.pathLength; k++)
+        {
+            if (currentPosition[k] == 'V')
+            {
+                count++;
+            }
+        }
+        if (count == 0)
+        {
+            printf("\n");
+        }
+        else
+        {
+            printf("  ");
+            for (k = 0; k < game.pathLength; k++)
+            {
+                if (currentPosition[k] == 'V')
+                {
+                    printf("%c\n", currentPosition[k]);
+                    break;
+                }
+                else
+                {
+                    printf("%c", currentPosition[k]);
+                }
+            }
+        

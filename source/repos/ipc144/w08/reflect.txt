@@ -1,0 +1,19 @@
+//////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #8
+Full Name  : Tarun Thomas
+Student ID#: 113605224
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+
+1. More user freedom is one advantage of functions built to return values in two different ways. For their particular usage, the choice of receiving the output as a return value or through an input is the most practical. For instance, receiving the output of a function via an argument may be more easy for a user than having to call the function multiple times if they wish to use it in different places throughout their code. However,it can result in confusion and inconsistency in the code, which is a drawback. The code may become more difficult to read and understand if different functions are created to return values in different ways. In addition, having multiple ways to return values can make it more difficult to debug the code, since it can be unclear where the output is coming from.
+
+2. Coupling refers to the degree of dependency between different modules or components. Splitting the 'start' function into two functions to do calculations for two structs can make the code less confusing. This would make the program less complex. The function displayCatFoodData is coupled since it has access to elements of the struct catFoodInfo. This can be separated by different functions to reduce coupling.
+
+
+3. The benefits of passing structures to functions are several. One benefit is that it can make the code easier by lowering the number of parameters that must be passed to functions. A single structure that contains all the relevant data can be passed in place of passing individual variables. This can reduce the chance of errors that occur because of incorrect argument or data types, as well as make the function easier to read and understand. Furthermore, supplying structures to functions might help the code become more reusable and modular. It is simpler to update and maintain the structure because it may be defined just once and applied throughout the entire program. The function 'DisplayCatfoodData' can be improved by accepting a structure as an argument, rather than individual variables. This would make the function more modular and easier to read, as all the necessary data would be contained within a single structure.

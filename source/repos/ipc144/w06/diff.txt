@@ -1,0 +1,14 @@
+In line number 70 of your output:
+The output should be:
+ 1. All items (no filter)
+             ^
+But your output is: 
+ 1. All items(no filter)
+             ^
+
+Unmatched character details:
+The character in column 14 is supposed to be:
+  [Space] ASCII code(32)
+but you printed
+  [(] ASCII code(40)
+

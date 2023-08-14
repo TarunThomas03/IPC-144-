@@ -1,0 +1,75 @@
+1) Mapping the month integer value to the first three characters of month can be done using either by if-else(Multiple) or by switch statements(case). 
+    
+   Syntax -if (condition)
+               statement
+           else if (condition)
+               statement
+           else
+              statement
+
+In workshop, it would be as
+if ((month >= 1 && month <= 12) && (year < 2012 || year> 2022))
+        {
+            printf("   ERROR: The year must be between 2012 and 2022 inclusive\n");
+        }
+        else if ((month <= 0 || month > 12) && (year >= 2012 && year <= 2022))
+        {
+            printf("   ERROR: Jan.(1) - Dec.(12)\n");
+        }
+        else if ((month <= 0 || month > 12) && (month < 2012 || year > 2022))
+        {
+            printf("   ERROR: The year must be between 2012 and 2022 inclusive\n   ERROR: Jan.(1) - Dec.(12)\n");
+
+        }
+        else if (month >= JAN && month <= DEC && year >= MIN_YEAR && year <= MAX_YEAR)
+        {
+            printf("\n*** Log date set! ***\n");
+            loop = 0;
+        }
+    }
+In this else-if construct I made the code to check all the conditions before instead of placing the check condition at the top. If the first condition is true, it skips the rest.The code checks and eliminates all other possibilities before obtaining the right answer.
+
+Syntax - switch
+switch (condition)
+{
+case constant:
+       sequence
+       break;
+case constant:
+       sequence
+       break;
+default:
+       sequence
+}
+
+In workshop, it would be 
+
+switch (month)
+{
+  case 1:
+      printf("%d-JAN-0%d\n", year);
+      break;
+
+  .......
+
+  case 11:
+      printf("%d-NOV-0%d\n", year);
+      break;
+
+  case 12:
+      printf("%d-DEC-0%d\n", year);
+      break;
+}
+
+If the condition matches a constant, the program executes the sequence associated with the corresponding case for that constant. If none of the matches, default statement executes.
+
+2)  The three types of iteration constructs are, 'while', 'do while' and 'for'.
+The 'while' loop executes its sequence only if the test condition is true. 
+The 'do while' loop executes its sequence at least once and continues executing it as long as the test condition is true. 
+The 'for' loop has the initialization, test condition and updation all together in a single line. 
+I think using 'while'loop is the most suitbale here as while loop tells the user to type in appropriate value until th euser does. However, do-while also can be used.
+
+
+3) Syntax and semantic errors were quite less as the intellisense in the compiler shows you exactly where the problem is. It markes an error wherever you dont obey the rules of the language. 
+   However, logical errors were quite common as the usage of loops is quite new to me. VS helped me to identify which value goes into which variable and this helps to understand and identify the code easily.
+

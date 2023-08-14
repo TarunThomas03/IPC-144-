@@ -1,0 +1,34 @@
+/*/////////////////////////////////////////////////////////////////////////
+                        Assignment 1 - Milestone 3 - Reflection
+Full Name  : Tarun Thomas
+Student ID#: 113605224
+Email      : tthomas60@myseneca.ca
+Section    : NFF
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+/////////////////////////////////////////////////////////////////////////*/
+
+1. 
+
+void viewAllAppointments(struct ClinicData* data);
+
+To view all appointments, the program displays a table of all appointments sorted by date and time. The table includes the patient's name, phone number, and appointment time. The "viewAllAppointments" function sorts the data in the appointment array and displays all the scheduled appointments for all patients. It first calls the "sort" function to sort the data in the array. It then loops through all the appointments and patients, and if there is a match between a patient number and an appointment number, it displays the appointment data by calling the "displayScheduleData" function.
+
+
+void viewAppointmentSchedule(struct ClinicData* data);
+
+To view appointments for a specific date, the program prompts the user to enter the date and displays a table of appointments on that date. The table includes the patient's name, phone number, and appointment time. The "viewAppointmentSchedule" function displays the appointment schedule for a user input date. It takes input from the user for the year, month, and day, and then sorts the data in the appointment array. It then loops through all the appointments and patients, and if there is a match between a patient number and an appointment number and the date matches the user input date, it displays the appointment data by calling the "displayScheduleData" function.
+
+void addAppointment(struct Appointment* app, int, struct Patient* pt, int);
+
+To add an appointment, the program prompts the user to enter the patient's number and the appointment date and time. The program then checks if the time slot is available, and if so, it adds the appointment to the schedule. The "addAppointment" function adds an appointment record to the appointment array. It first takes input from the user for the patient number and finds the patient index in the patient array. It then takes input from the user for the date and time of the appointment and checks if the time slot is available. If it is not available, it displays an error message. If it is available, it assigns the appointment data to the next available slot in the appointment array.
+
+2.
+
+The number of scanf function calls were purposely and significantly minimized to reduce the chances of errors and unexpected behavior. This decision may have been made because scanf can be difficult to use correctly, particularly when reading input from the user. Additionally, minimizing the number of scanf function calls can make the code easier to understand and maintain. The more scanf calls there are, the more complex the code becomes, making it harder to modify or debug in the future. Excessive scanf calls can lead to potential errors or bugs in the code. If the user inputs the wrong type of data or enters an unexpected value, the program may crash or behave unexpectedly. By minimizing the number of scanf calls and validating user input before processing it, the program can be made more efficient. Overall, minimizing the number of scanf calls in the client.c source code file can lead to a more efficient, reliable, and maintainable program with a better user experience and easy code modification.
+
+3.
+
+I placed the functions viewAllAppointments,viewAppointmentSchedule and addAppointment inside clinic.c module. This is because by separating functions based on their purpose and functionality, it makes the code more modular and easier to modify in the future. When organizing functions into modules, it is important to group related functionality together. For example, if you have a set of functions that are related to file input/output operations, it would be better to group them together in a module related to file handling. This helps make your code more organized and easier to maintain.Also, I considered the scope of your functions. If a function is only used within a specific module, it makes sense to define it within that module. However, if a function is used across multiple modules, you may want to define it in a separate module that can be imported and reused throughout your code. Other considerations to include is the size and complexity of your code, as well as the programming language and frameworks I am using. Many programming languages have conventions or best practices for organizing code into modules, so it's a good idea to follow those guidelines whenever possible. Finally, it's important to choose names for your modules and functions so that others (including yourself) can understand the purpose and functionality of each one. These all are the reasons why I included thses functions into clininc.c module.

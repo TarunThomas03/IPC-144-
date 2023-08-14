@@ -1,0 +1,10 @@
+1. With the completion of this workshop, you must have begun to appreciate why code formatting is important. 
+   Explain how you made your code – especially the iteration and selection logic parts – easy to read and maintain.
+ 
+   It helped me easily identify the section of code with errors. Formating sortes all types of loop sectionsand it makes the job easier for the person who reads the code.This helps the bug fixer 
+   to easily understand where the mistake is and the logic behind.    
+
+2. Nested logic is an important feature of programming in any language. Identify and briefly discuss the biggest 
+   impact on how this workshop could be coded if nesting were not possible
+
+   Nesting helps easily group similar sections and also reduces the complexity of coding with loops. It reduced the amount of loops and also makes it easier for readers to understand the code.

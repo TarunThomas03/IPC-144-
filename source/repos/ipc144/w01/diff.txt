@@ -1,0 +1,14 @@
+In line number 4 of your output:
+The output should be:
+Set the year and month for the well-being log (YYYY MM): 2011 1
+                                                         ^
+But your output is: 
+Set the year and month for the well-being log (YYYY MM): 
+                                                          ^
+
+Unmatched character details:
+The character in column 59 is supposed to be:
+  [2] ASCII code(50)
+but you printed
+  [Empty Line] ASCII code(0)
+

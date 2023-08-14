@@ -1,0 +1,27 @@
+-1. Parallel arrays provide us the ability to group related data. Using what you coded in this workshop, briefly 
+   explain how you linked related data for any given item in the dataset? What was the ‘key’ used to accomplish 
+   this?
+
+ :  double cost[wishListItems];
+    int priority[wishListItems];
+    char finance[wishListItems];
+ 
+    The key in my solution is the array with the number of items in the wishlist. The same concept of subtracting one from the value was used to access the array elements.
+    That is, the third item was stored in the second index. priority array was used to store the order of priority and finance for storing
+    finance options.  
+
+2. Why do you think it is common practice to iterate arrays initializing the iterator variable to zero and not to a 
+   value of one? Justify your answer using an example from this workshop.
+
+ :  Because programming languages use Zero- based indexing for storing array values. In zero-based indexing, the first element of an array has an index of 0, the second element has an index of 1, and so on.
+    eg :- for (i = 1; i <= wishListItems; i++)
+    I initialized the iterations from 1 and whenever I had to access an element I subtracted 1 every time.
+    eg:- while (cost[i - 1] < minCost);
+    
+3. How would you describe conceptually what an array is to a child (5-8-year-old)? How would you describe 
+   accessing an element in the array? Warning: keep your explanation simple or the child will not understand.
+
+ : An array is like a row of boxes where you can store different things in each box. Imagine you have a row of 5 boxes and you want to put some toys in them. You can put a toy in each box, so you have 5 toys in total. 
+   We can call each box a "slot" in the array. Accessing an element in the array means taking a toy out of one of the boxes. We can do this by telling the array which box we want to take the toy from. For example, if we 
+   want to take the toy from the third box, we can say "I want to take the toy from the box number 3". The number that we use to identify the box is called the "index" of the array. But, in programs we start counting from 0. 
+   So, If u have to get the toy from third box, you have say that you need the toy from index 2. 
