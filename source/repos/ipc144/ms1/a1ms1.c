@@ -1,16 +1,4 @@
-// Copy the below commented "header" section to all your source code files!
 
-/*/////////////////////////////////////////////////////////////////////////
-                        Assignment 1 - Milestone 1
-Full Name  : Tarun Thomas
-Student ID#: 113605224
-Email      : tthomas60@myseneca.ca
-Section    : NFF
-Authenticity Declaration:
-I declare this submission is the result of my own work and has not been
-shared with any other student or 3rd party content provider. This submitted
-piece of work is entirely of my own creation.
-/////////////////////////////////////////////////////////////////////////*/
 
 // ----------------------------------------------------------------------------
 // (Do not copy the below)
